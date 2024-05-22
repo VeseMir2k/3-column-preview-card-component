@@ -5,7 +5,7 @@ import Title from './Title';
 
 interface Props {
   icon: string;
-  alt: string;
+  alt?: string;
   title: string;
 }
 

@@ -1,9 +1,4 @@
-interface Props {
-  icon: string;
-  alt: string;
-}
-
-const Icon = ({ icon, alt }: Props) => {
+const Icon = ({ icon, alt = 'icon' }: { icon: string; alt?: string }) => {
   return <img src={icon} alt={alt} />;
 };
 
