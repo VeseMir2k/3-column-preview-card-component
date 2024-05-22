@@ -1,5 +1,12 @@
+import suvsIcon from './assets/icon-suvs.svg';
+import Card from './components/Card';
+
 const App = () => {
-  return <div className="text-3xl font-bold text-red-800">React ViteJs</div>;
+  return (
+    <div>
+      <Card icon={suvsIcon} alt="suv icon" />
+    </div>
+  );
 };
 
 export default App;
