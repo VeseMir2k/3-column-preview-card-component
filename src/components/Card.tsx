@@ -7,14 +7,15 @@ interface Props {
   icon: string;
   alt?: string;
   title: string;
+  text: string;
 }
 
-const Card = ({ icon, alt, title }: Props) => {
+const Card = ({ icon, alt, title, text }: Props) => {
   return (
     <>
       <Icon icon={icon} alt={alt} />
       <Title title={title} />
-      <Text />
+      <Text text={text} />
       <Button />
     </>
   );
