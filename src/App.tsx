@@ -4,7 +4,7 @@ import Card from './components/Card';
 const App = () => {
   return (
     <div>
-      <Card icon={suvsIcon} alt="suv icon" />
+      <Card icon={suvsIcon} alt="suv icon" title="SUVS" />
     </div>
   );
 };

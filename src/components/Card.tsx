@@ -6,13 +6,14 @@ import Title from './Title';
 interface Props {
   icon: string;
   alt: string;
+  title: string;
 }
 
-const Card = ({ icon, alt }: Props) => {
+const Card = ({ icon, alt, title }: Props) => {
   return (
     <>
       <Icon icon={icon} alt={alt} />
-      <Title />
+      <Title title={title} />
       <Text />
       <Button />
     </>
