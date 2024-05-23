@@ -8,16 +8,17 @@ interface Props {
   alt?: string;
   title: string;
   text: string;
+  bgColor: string;
 }
 
-const Card = ({ icon, alt, title, text }: Props) => {
+const Card = ({ icon, alt, title, text, bgColor }: Props) => {
   return (
-    <>
+    <div className={`${bgColor} p-[48px]`}>
       <Icon icon={icon} alt={alt} />
       <Title title={title} />
       <Text text={text} />
       <Button />
-    </>
+    </div>
   );
 };
 
