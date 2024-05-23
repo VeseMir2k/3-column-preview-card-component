@@ -7,7 +7,7 @@ const App = () => {
     <Card icon={item.icon_src} alt={item.alt} title={item.title} text={item.text} key={index} />
   ));
 
-  return <div>{cards}</div>;
+  return <div className="px-[24px] py-[88px]">{cards}</div>;
 };
 
 export default App;
