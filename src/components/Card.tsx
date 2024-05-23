@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import Button from './Button';
 import Icon from './Icon';
 import Text from './Text';
@@ -8,17 +9,27 @@ interface Props {
   alt?: string;
   title: string;
   text: string;
-  bgColor: string;
-  btnTxtColor: string;
+  color: string;
 }
 
-const Card = ({ icon, alt, title, text, bgColor, btnTxtColor }: Props) => {
+const bgColors: { [key: string]: string } = {
+  orange: 'bg-orange',
+  teal: 'bg-teal',
+  dark_teal: 'bg-dark_teal',
+};
+
+const Card = ({ icon, alt, title, text, color }: Props) => {
   return (
-    <div className={`${bgColor} p-[48px] text-white first-of-type:rounded-t-lg last-of-type:rounded-b-lg`}>
+    <div
+      className={classNames(
+        'p-[48px] text-white first-of-type:rounded-t-lg last-of-type:rounded-b-lg',
+        bgColors[color],
+      )}
+    >
       <Icon icon={icon} alt={alt} />
       <Title title={title} />
       <Text text={text} />
-      <Button btnTxtColor={btnTxtColor} />
+      <Button color={color} />
     </div>
   );
 };
