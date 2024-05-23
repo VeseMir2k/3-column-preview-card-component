@@ -9,7 +9,11 @@ const App = () => {
     <Card color={colors[index]} icon={item.icon_src} alt={item.alt} title={item.title} text={item.text} key={index} />
   ));
 
-  return <div className="px-[24px] py-[88px]">{cards}</div>;
+  return (
+    <div className="flex min-h-screen px-[24px] py-[88px] md:items-center md:justify-center md:px-[24px]">
+      <div className="flex flex-col md:flex-row">{cards}</div>
+    </div>
+  );
 };
 
 export default App;

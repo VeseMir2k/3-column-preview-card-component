@@ -22,7 +22,7 @@ const Card = ({ icon, alt, title, text, color }: Props) => {
   return (
     <div
       className={classNames(
-        'p-[48px] text-white first-of-type:rounded-t-lg last-of-type:rounded-b-lg',
+        'flex flex-col p-[48px] text-white first-of-type:rounded-t-lg last-of-type:rounded-b-lg md:first-of-type:rounded-bl-lg md:first-of-type:rounded-tr-none md:last-of-type:rounded-bl-none md:last-of-type:rounded-tr-lg lg:w-[300px]',
         bgColors[color],
       )}
     >

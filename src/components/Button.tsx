@@ -20,7 +20,7 @@ const Button = ({ color }: Props) => {
   return (
     <button
       className={classNames(
-        'font-lexend_deca bg-grey rounded-[25px] px-[31px] py-[12px] text-[15px] font-normal leading-[25px]',
+        'font-lexend_deca bg-grey mt-auto rounded-[25px] px-[31px] py-[12px] text-[15px] font-normal leading-[25px]',
         textColors[color],
         bgColors[color],
       )}
