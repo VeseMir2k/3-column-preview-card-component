@@ -5,9 +5,12 @@ import data from './data.json';
 const App = () => {
   const bgColorVariants = ['bg-orange', 'bg-teal', 'bg-dark_teal'];
 
+  const btnTxtColorVariants = ['text-orange', 'text-teal', 'text-dark_teal'];
+
   const cards = data.map((item, index) => (
     <Card
       bgColor={bgColorVariants[index]}
+      btnTxtColor={btnTxtColorVariants[index]}
       icon={item.icon_src}
       alt={item.alt}
       title={item.title}

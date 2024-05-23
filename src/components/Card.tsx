@@ -9,15 +9,16 @@ interface Props {
   title: string;
   text: string;
   bgColor: string;
+  btnTxtColor: string;
 }
 
-const Card = ({ icon, alt, title, text, bgColor }: Props) => {
+const Card = ({ icon, alt, title, text, bgColor, btnTxtColor }: Props) => {
   return (
-    <div className={`${bgColor} p-[48px]`}>
+    <div className={`${bgColor} p-[48px] text-white`}>
       <Icon icon={icon} alt={alt} />
       <Title title={title} />
       <Text text={text} />
-      <Button />
+      <Button btnTxtColor={btnTxtColor} />
     </div>
   );
 };
